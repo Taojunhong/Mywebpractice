@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box1 {
+            background-color: rgb(192, 241, 192);
+            background-image: url(images/wdbj.png);
+            background-size: cover;
+            /*让图片不以重复的方式填充屏幕*/
+            /* padding: 0px;
+            border: 0px;
+            margin: 0px; */
+        }
+        
+        .box2 {
+            width: 400px;
+            font-weight: bold;
+            /* background-color: rgb(192, 241, 192); */
+            text-align: left;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        
+        .box3 {
+            text-align: center;
+            color: rgb(247, 53, 62);
+            line-height: 3em;
+            /*行高*/
+            letter-spacing: 50px;
+            /*字符间距*/
+        }
+        
+        .box4 {
+            width: 350px;
+            height: 170px;
+            color: rgb(170, 5, 5);
+            text-indent: 2em;
+            /*首行缩进2个字符*/
+            background: transparent;
+            /*背景透明*/
+            /* background-color: rgb(243, 182, 197); */
+        }
+        
+        .box5 {
+            width: 55px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            <h1 class="box3">登录</h1>
+            <hr />
+            <form action="" method="get">
+                <br /> 邮箱地址&nbsp;：&nbsp;
+                <input type="text" placeholder="请输入邮箱地址" />@
+                <select name="email">	
+                        <option value="">163</option>
+                        <option value="">126</option>
+                        <option value="">yeah</option>
+                    </select>
+                <br /><br />密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;：
+
+                <input type="password" />
+                <br /><br /> 性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别 ：
+
+
+                <input type="radio" name="gender" />男
+                <input type="radio" name="gender" checked/>女
+                <br /><br /> 验&nbsp;&nbsp;证&nbsp;&nbsp;码 ：
+
+                <input type="text" />
+                <img class="box5" src="images/PIN.png" title="这是验证码" />
+                <br /><br />
+
+                <!--<input type="button" value=""/>-->
+                <button>免费获取验证码</button>
+
+                <br /> <br /> 备注：
+                <br /> <br />
+                <textarea class="box4">你想说点啥...</textarea>
+
+                <br /><br />
+                <input type="checkbox" />同意<a href="#">"隐私条款"</a>和"隐私权相关政策"
+                <br /><br />
+                <a href="index5_1My_home_page.html">
+                    <input type="button" value="登录" />
+                </a>
+                <a href="index5_2My_home_page.html">
+                    <input type="button" value="进入myhome" />
+                </a>
+                <br /><br /><br/>
+                <hr />
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quibusdam similique quod vel praesentium perferendis eius exercitationem ut, ad beatae veritatis, esse architecto veniam labore distinctio.
+                </h6>
+                <h6 align="left">copyright 版权所有，侵权必究</h6>
+                <br />
+
+            </form>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
