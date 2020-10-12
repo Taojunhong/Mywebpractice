@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #nav {
+            width: 300px;
+            margin: 100px auto;
+            font-size: 0;
+            font-weight: bold;
+        }
+        
+        .box {
+            position: relative;
+            float: left;
+            left: 38%;
+            width: 120px;
+            height: 120px;
+            font-size: 16px;
+            margin: 0 10px;
+            border: 2px solid rgb(29, 153, 70);
+            color: rgb(247, 188, 115);
+        }
+        
+        a {
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            border-bottom: 1px solid gray;
+        }
+        
+        a:hover {
+            color: rgb(245, 50, 50);
+            background-color: rgb(177, 247, 200);
+            border: 2px solid;
+            border-left-color: rgb(210, 224, 11);
+            border-top-color: rgb(210, 224, 11);
+            border-right-color: rgb(210, 224, 11);
+        }
+        
+        .box:hover {
+            color: rgb(245, 50, 50);
+            background-color: rgb(177, 247, 200);
+            border: 2px solid;
+            border-left-color: rgb(210, 224, 11);
+            border-top-color: rgb(210, 224, 11);
+            border-right-color: rgb(210, 224, 11);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+        <a href="#">链接3</a>
+    </div>
+    <div class="box">
+        <h2>盒子1</h2>
+    </div>
+    <div class="box">
+        <h2>盒子2</h2>
+    </div>
+</body>
+
+</html>
