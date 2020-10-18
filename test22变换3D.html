@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D变换</title>
+    <style>
+        .box1 {
+            width: 450px;
+            margin: 100px auto;
+            perspective: 100px;
+        }
+        
+        .box2 {
+            width: 150px;
+            height: 150px;
+            float: left;
+            transition: linear 0.5s;
+            transform-style: preserve-3d;
+        }
+        
+        img {
+            width: 130px;
+            height: 130px;
+            margin-right: 100px;
+        }
+        
+        .x:hover {
+            transform: rotateX(45deg);
+        }
+        
+        .y:hover {
+            transform: rotateY(45deg);
+        }
+        
+        .z:hover {
+            transform: rotateZ(50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2 x">
+            <img src="../Images/28.jpg" alt="28">
+        </div>
+        <div class="box2 y">
+            <img src="../Images/28.jpg" alt="28">
+        </div>
+        <div class="box2 z">
+            <img src="../Images/28.jpg" alt="28">
+        </div>
+    </div>
+</body>
+
+</html>

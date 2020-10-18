@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        @keyframes mycolor {
+            0% {
+                background-color: red;
+            }
+            30% {
+                background-color: blue;
+            }
+            60% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: green;
+            }
+            id
+        }
+        
+        div {
+            margin: 100px auto;
+            text-align: center;
+            height: 120px;
+            width: 120px;
+            line-height: 30px;
+            border-radius: 5px;
+            border: 2px solid rebeccapurple;
+        }
+        
+        div:hover {
+            animation: mycolor 5s linear;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>这是一个动画</div>
+
+</body>
+
+</html>
