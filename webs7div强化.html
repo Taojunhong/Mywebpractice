@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+        /* * {
             margin: 0;
             padding: 0;
-        }
+        } */
         
         .box1 {
             display: inline-block;
@@ -37,6 +37,32 @@
             position: absolute;
             bottom: 0;
         }
+        /*第二个内容*/
+        
+        .div {
+            position: relative;
+            height: 1000px;
+            width: 400px;
+            text-align: center;
+            color: blue;
+            margin: 100px auto;
+            background-color: #6cf;
+            border: 1px solid blueviolet;
+        }
+        
+        .box {
+            position: absolute;
+            top: -13px;
+            left: 5px;
+            height: 20px;
+            width: 100px;
+            margin: 0;
+            font: 14px;
+            color: red;
+            border: 1px solid blue;
+            background-color: yellow
+        }
+    </style>
     </style>
 </head>
 
@@ -58,6 +84,18 @@
             <img src="../Images/4.jpeg" alt="4">
             <div class="box2">是妹妹啊</div>
         </div>
+    </div>
+    <div class="div">
+        <div class="box">
+            Hello,World!
+        </div>
+        <p>账号： <input type="text" value="" name="username">
+            <input type="submit" value="提交" name="submitbtn1">
+        </p>
+        <p>
+            密码： <input type="password" value="" name="userpass">
+            <input type="submit" value="提交" name="submitbtn2">
+        </p>
     </div>
 
 </body>
