@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            font-size: 14px;
+            background-color: darkkhaki;
+        }
+        
+        #container {
+            margin: 80px auto;
+            width: 640px;
+            height: 600px;
+        }
+        
+        #header {
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            background-color: powderblue;
+            border-bottom: 5px;
+        }
+        /* .box1 {
+            background-color: chartreuse;
+        }
+        
+        .box2 {
+            background-color: aquamarine;
+        }
+        
+        .box3 {
+            background-color: cadetblue;
+        }
+        
+        .box4 {
+            background-color: yellow;
+        }
+        
+        .box5 {
+            background-color: royalblue;
+        } */
+        
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            width: 100px;
+            height: 100px;
+            font-size: 40px;
+            text-align: center;
+            color: blueviolet;
+            line-height: 100px;
+            font-weight: bold;
+            text-shadow: 4px 4px 8px;
+            margin-left: 23.3px;
+            float: left;
+        }
+        
+        #main {
+            height: 500px;
+            margin-bottom: 5px;
+        }
+        
+        #aside {
+            float: left;
+            width: 250px;
+            height: 500px;
+            border-radius: 10px;
+            background-color: palegreen;
+        }
+        
+        .menu {
+            height: 64px;
+            width: 200px;
+            color: royalblue;
+            font-size: 24px;
+            text-align: center;
+            line-height: 68px;
+            letter-spacing: 4px;
+            border-radius: 10px;
+            margin: 30px 25px 0px 25px;
+            background-color: pink;
+            display: block;
+            /* position: relative; */
+        }
+        
+        .menu a {
+            display: block;
+            text-decoration: none;
+        }
+        
+        .menu:hover {
+            background-color: cornflowerblue;
+        }
+        
+        .menu:active {
+            background-color: darkorange;
+        }
+        
+        .content {
+            float: left;
+            width: 385px;
+            height: 500px;
+            border-radius: 15px;
+            margin-left: 5px;
+            background-color: cyan;
+            position: relative;
+        }
+        
+        h2,
+        h3 {
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        .page {
+            /* background-color: peachpuff; */
+            overflow: auto;
+            display: none;
+        }
+        
+        .page,
+        p {
+            text-indent: 2em;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+        
+        .content div:target {
+            display: block;
+        }
+        
+        #footer {
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid blue;
+            background-color: peru;
+        }
+        
+        h4,
+        h6 {
+            text-indent: 2em;
+            line-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="box1">江西</div>
+            <div class="box2">软件</div>
+            <div class="box3">职业</div>
+            <div class="box4">技术</div>
+            <div class="box5">大学</div>
+        </div>
+        <div id="main">
+            <div id="aside">
+                <div class="menu"><a href="#home" class="">学校概况</a></div>
+                <div class="menu"><a href="#news" class="">新闻中心</a></div>
+                <div class="menu"><a href="#department" class="">机构设置</a></div>
+                <div class="menu"><a href="#teachers" class="">师资队伍</a></div>
+                <div class="menu"><a href="#teaching" class="">教育教学</a></div>
+            </div>
+            <div class="content">
+                <div id="home" class="page">
+                    <h2>讲述红色故事，传承长征精神</h2>
+                    <h3>讲述红色故事，传承长征精神</h3>
+                    <p>
+                        革命传统是我们党和人民长期以来伟大革命实践的产物，是中华民族几千年来形成的民族美德、民族精神和优良传统的升华与结晶，是无数爱国志士、革命先烈在艰苦卓越的奋斗中用鲜血与生命创造的宝贵精神财富，大力开展革命传统教育，使人民尤其是青少年继承这些优良传统，对于推进社会主义物质文明和精神文明的建设，培养和造就一代新人，使之负担起建设文化、振兴中华的历史重任，具有非常重要的现实意义。 为了丰富校园文化，增强同学们的自信心、自豪感和荣誉感，构建良好的校园文化。软件工程学院决定举办以“讲述红色故事，传承长征精神”为主题的演讲比赛。
+                    </p>
+                </div>
+                <div id="news" class="page">
+                    <h2>"School news 30 points"</h2>
+                    <p> <br /> 新闻30分：The revolutionary tradition is the product of our party and people's great revolutionary practice for a long time. It is the sublimation and crystallization of the national virtue, national spirit and fine tradition formed
+                        by the Chinese nation for thousands of years. It is the precious spiritual wealth created by countless patriots and revolutionary martyrs with blood and life in their arduous and outstanding struggle. We should vigorously carry
+                        out the education of revolutionary tradition, so that the people, especially the young people.</p>
+                </div>
+                <div id="department" class="page">
+                    <h2>党史学习 | 学党史、知党情、强党性</h2>
+                    <h3>没有共产党就没有新中国</h3>
+                    <p>中国共产党的成立是不容易的，走过的路程更是艰辛的。1840年，由于西方列强的入侵，中国逐渐成为半殖民地半封建社会，中国人民受到帝国主义、封建主义的双重压迫，民族危机和社会危机空前深重。孙中山先生领导的辛亥革命，推翻了统治中国几千年的君主专制制度，但未能改变中国半殖民地半封建的社会性质和人民的悲惨命运。十月革命的隆隆炮声，给中国送来了马克思列宁主义这一先进理论。从五四运动开始，中国工人阶级作为先进的社会力量崭露头角，同时一批先进的知识分子高举民主和科学的旗帜，为新思想新理论在中国的传播打开了道路。党的创始人们，顶住了重重压力，于1921年创立了伟大的中国共产党。没有共产党，就没有新中国。有了共产党，中国的面貌就焕然一新。</p>
+                </div>
+                <div id="teachers" class="page">
+                    <h2>师资概况</h2>
+                    <p>学校自创办以来，认真贯彻落实党中央、国务院关于人才工作的一系列方针、政策，坚持“以人为本”，实施“人才强校”战略，优化人才成长环境，创新人才工作机制。学校师资队伍的结构得到了进一步优化，数量和质量得到了进一步提高，实现了师资队伍建设“十二五”规划的目标，为学校“十三五”期间的发展提供了强有力的师资保证。 根据师资建设发展的需要，学校坚持“加速培养，积极引进”的原则，出台并实施了人才引进、培养、考核、晋升、管理办法，建立了科学合理的选人、用人、留人的机制，围绕“事业留人，环境留人，待遇留人”的人才观，广开渠道，加大投入力度，师资队伍建设不断走上新的台阶。
+                        中国科学院院士李衍达和中国工程院院士倪光南为学校名誉校长。
+                    </p>
+                </div>
+                <div id="teaching" class="page">
+                    <h2>“创业创新，知识管理”</h2><br />
+                    <p>我校由国家软件百强企业先锋软件公司创办，始建于2003年，2018年经教育部批准在原有的基础上成功升格为职业本科院校， 2019年5月更名为江西软件职业技术大学，成为全国首批15所职业技术大学之一，也是中国第一所软件职业技术大学。 自办学以来，学校秉承“创业创新，知识管理”的校训；坚持“校企融合，产学互动”的 办学模式； 实施“三好一专，十一工程”的育人理念；将“教的都是新的，学的都是用的”贯穿于教学之中，请工程师当老师，用真实的项目实训；培养出了一批批高素质、深受社会欢迎的应用技术技能人才。
+                        为高质量发展本科教育，我校以科技发展趋势和市场需求为导向，建立了信息技术、互联网经济及数字媒体等专业群，现设有软件工程、智能控制技术、计算机应用工程、信息安全与管理、通信工程、网络工程、电子商务、会计、等15个本科专业。校企共同研制本科专业人才培养方案，企业深度参与协同育人，及时将新技术、新工艺、新规范纳入教学标准和教学内容。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h4> 地址：江西省南昌市湾里区先锋创客小镇A9教学楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赣ICP备13005365号</h4>
+            <h6> &nbsp;&nbsp;&nbsp;联系电话： 0791-87709323(教务) 0791-87709324(学工) &nbsp;&nbsp;&nbsp;&nbsp; 版权所有：江西软件职业技术大学软件工程学院</h6>
+        </div>
+    </div>
+</body>
+
+</html>
