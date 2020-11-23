@@ -1,0 +1,93 @@
+* {
+    /*  初始化  取消页面的内外边距  */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* 弹性布局  让页面元素垂直加水平居中 */
+    /* Flex是Flexible Box的缩写，意为"弹性布局"，
+    用来为盒状模型提供最大的灵活性。设为Flex布局以后，
+    子元素的float、clear和vertical-align属性将失效。 */
+    display: flex;
+    /* justify-content : center;元素在主轴（页面）上居中排列 */
+    justify-content: center;
+    /* align-items : center; 弹性盒子元素在该行的侧轴（纵轴）上居中放置。（居中对齐） */
+    align-items: center;
+    /* 让页面占屏幕总高 */
+    /*vh就是当前屏幕可见高度的1%，也就是说 height: 100vh==height: 100%;
+     但是当元素没有内容时候，设置height:100%，该元素不会被撑开，
+     此时高度为0，但是设置height:100vh，该元素会被撑开屏幕高度一致。 */
+    height: 100vh;
+    background-color: #000;
+}
+
+a {
+    /* 相对定位 */
+    position: relative;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    /* uppercase  定义仅有大写字母 */
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    border-radius: 50px;
+    /*  */
+    /* 背景渐变色 */
+    /* linear-gradient() 函数用于创建
+    一个表示两种或多种颜色线性渐变的图片 创建一个线性渐变，
+    需要指定两种颜色，还可以实现不同方向（指定为一个角度）
+    的渐变效果，如果不指定方向，默认从下到上渐变。*/
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /*  */
+    /* 背景渐变色大小 */
+    /* 以父元素的百分比来设置背景图像的宽度和高度。
+    第一个值设置宽度，第二个值设置高度。
+    如果只设置一个值，则第二个值会被设置为 "auto"。 */
+    background-size: 400%;
+    /*  */
+    /* z-index 属性设置元素的堆叠顺序。
+    拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。 */
+    z-index: 1;
+}
+
+
+/* 下面设计  发光效果 */
+
+a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 50px;
+    /* 背景渐变色 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 背景渐变色大小 */
+    background-size: 400%;
+    /* 元素的位置  底层或者顶层  -值表示底层 +值表示顶层 */
+    z-index: -1;
+    /* 设置模糊度 显示发光效果 */
+    /* 将模糊或颜色偏移等图形效果应用于元素 */
+    filter: blur(20px);
+}
+
+a:hover {
+    /* 动画 名称 时间 infinite 是无限次播放 */
+    animation: sun 8s infinite;
+}
+
+a:hover::before {
+    animation: sun 8s infinite;
+}
+
+@keyframes sun {
+    100% {
+        /* 背景位置 */
+        background-position: -400% 0;
+    }
+}
